@@ -18,8 +18,10 @@ class Game extends React.Component {
 
   state = {
     people,
-    currectScore: 0,
-    highScore: 0
+    currentScore: 0,
+    highScore: 0,
+    clicked: [],
+    rightWrong: ""
   };
 
 
@@ -28,14 +30,40 @@ class Game extends React.Component {
     this.setState({ people: shufflePeople });
   }
 
-  // Testing updating the state
-  handleClick = (id) => {
-    this.setState({ score: this.state.score + 1 });
+  handleInitialize = () => {
+    this.setState({
+      currentScore: 0,
+      highScore: this.state.highScore,
+      rightWrong: "You guessed wrong",
+      clicked: []
+    });
     this.handleShuffle();
   };
 
+  // Testing updating the state
+  handleClick = id => {
+    if (this.state.clicked.indexOf(id) === -1){
+      this.setState({ clicked: this.state.clicked.concat(id) });
+      this.handleScore();
+    } else {
+      this.handleInitialize();
+    }
+    this.handleShuffle();
+  };
 
-
+  handleScore = () => {
+    const newScore = this.state.currentScore + 1;
+    this.setState({
+      currentScore: newScore,
+      rightWrong: "You are right"
+    });
+    if (newScore >= this.state.highScore) {
+      this.setState({ highScore: newScore });
+    } else if (newScore === 12) {
+      this.setState({ rightWrong: "You win!" })
+    }
+    this.handleShuffle();
+  };
 
 
   render() {
@@ -45,9 +73,9 @@ class Game extends React.Component {
         <Header></Header>
         {people.map(people => (
           <PeopleCard
+            key={people.id}
             id={people.id}
             handleClick={this.handleClick}
-            key={people.id}
             name={people.name}
             image={people.image}
           />
