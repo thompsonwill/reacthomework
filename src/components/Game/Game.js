@@ -39,7 +39,7 @@ class Game extends React.Component {
     this.setState({
       currentScore: 0,
       highScore: this.state.highScore,
-      rightWrong: "You guessed wrong",
+      rightWrong: "Wrong! Try again.",
       clicked: []
     });
     this.handleShuffle();
@@ -61,12 +61,12 @@ class Game extends React.Component {
     const newScore = this.state.currentScore + 1;
     this.setState({
       currentScore: newScore,
-      rightWrong: "You are right"
+      rightWrong: "Correct!"
     });
     if (newScore >= this.state.highScore) {
       this.setState({ highScore: newScore });
     } else if (newScore === 12) {
-      this.setState({ rightWrong: "You win!" })
+      this.setState({ rightWrong: "You win!" });
     }
     this.handleShuffle();
   };
