@@ -67,17 +67,21 @@ class Game extends React.Component {
   render() {
     return (
       <Wrapper>
-        <Title>Hello, React Homework</Title>
+        <Title>Click on an image to ear points. Don't click an image more than once!</Title>
         <Header 
           rightWrong={this.state.rightWrong}
+          score={this.state.currentScore}
+          highScore={this.state.highScore}
         />
           
         {people.map(people => (
           <PeopleCard
             key={people.id}
-            id={people.id}
             handleClick={this.handleClick}
             handleScore={this.handleScore}
+            handleInitialize={this.handleInitialize}
+            handleShuffle={this.handleShuffle}
+            id={people.id}
             name={people.name}
             image={people.image}
           />
