@@ -4,7 +4,7 @@ import "./style.css";
 const Header = props => (
     <div className="header">
         <div className="header-right">
-            <h1>Header</h1>
+            <h4>{props.rightWrong}</h4>
         </div>
     </div>
 )

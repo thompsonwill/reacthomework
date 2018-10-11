@@ -40,15 +40,13 @@ class Game extends React.Component {
     this.handleShuffle();
   };
 
-  // Testing updating the state
   handleClick = id => {
-    if (this.state.clicked.indexOf(id) === -1){
-      this.setState({ clicked: this.state.clicked.concat(id) });
+    if (this.state.clicked.indexOf(id) === -1) {
       this.handleScore();
+      this.setState({ clicked: this.state.clicked.concat(id) });
     } else {
       this.handleInitialize();
     }
-    this.handleShuffle();
   };
 
   handleScore = () => {
@@ -70,12 +68,16 @@ class Game extends React.Component {
     return (
       <Wrapper>
         <Title>Hello, React Homework</Title>
-        <Header></Header>
+        <Header 
+          rightWrong={this.state.rightWrong}
+        />
+          
         {people.map(people => (
           <PeopleCard
             key={people.id}
             id={people.id}
             handleClick={this.handleClick}
+            handleScore={this.handleScore}
             name={people.name}
             image={people.image}
           />
