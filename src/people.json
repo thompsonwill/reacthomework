@@ -2,61 +2,73 @@
     {
         "id": 1,
         "name": "Superman",
-        "image": "https://upload.wikimedia.org/wikipedia/en/e/eb/SupermanRoss.png"
+        "image": "https://upload.wikimedia.org/wikipedia/en/e/eb/SupermanRoss.png",
+        "clicked": false
     },
     {
         "id": 2,
         "name": "Batman",
-        "image": "https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png"
+        "image": "https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png",
+        "clicked": false
     },
     {
         "id": 3,
         "name": "The Flash",
-        "image": "https://upload.wikimedia.org/wikipedia/en/7/7e/The_Flash_%28Barry_Allen%29_Alex_Ross%27s_art.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/en/7/7e/The_Flash_%28Barry_Allen%29_Alex_Ross%27s_art.jpg",
+        "clicked": false
     },
     {
         "id": 4,
         "name": "The Hulk",
-        "image": "https://upload.wikimedia.org/wikipedia/en/5/59/Hulk_%28comics_character%29.png"
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/59/Hulk_%28comics_character%29.png",
+        "clicked": false
     },
     {
         "id": 5,
         "name": "Iron Man",
-        "image": "https://upload.wikimedia.org/wikipedia/en/e/e0/Iron_Man_bleeding_edge.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/en/e/e0/Iron_Man_bleeding_edge.jpg",
+        "clicked": false
     },
     {
         "id": 6,
         "name": "Thor",
-        "image": "https://upload.wikimedia.org/wikipedia/en/4/41/Thor-272.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/41/Thor-272.jpg",
+        "clicked": false
     },
     {
         "id": 7,
         "name": "Spiderman",
-        "image": "https://upload.wikimedia.org/wikipedia/en/2/21/Web_of_Spider-Man_Vol_1_129-1.png"
+        "image": "https://upload.wikimedia.org/wikipedia/en/2/21/Web_of_Spider-Man_Vol_1_129-1.png",
+        "clicked": false
     },
     {
         "id": 8,
         "name": "Wolverine",
-        "image": "https://upload.wikimedia.org/wikipedia/en/c/c8/Marvelwolverine.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/en/c/c8/Marvelwolverine.jpg",
+        "clicked": false
     },
     {
         "id": 9,
         "name": "Juggernaut",
-        "image": "https://upload.wikimedia.org/wikipedia/en/4/44/Juggernaut2.PNG"
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/44/Juggernaut2.PNG",
+        "clicked": false
     },
     {
         "id": 10,
         "name": "Deadpool",
-        "image": "https://upload.wikimedia.org/wikipedia/en/c/ca/Deadpool.png"
+        "image": "https://upload.wikimedia.org/wikipedia/en/c/ca/Deadpool.png",
+        "clicked": false
     },
     {
         "id": 11,
         "name": "Star Lord",
-        "image": "https://upload.wikimedia.org/wikipedia/en/1/15/ST1.PNG"
+        "image": "https://upload.wikimedia.org/wikipedia/en/1/15/ST1.PNG",
+        "clicked": false
     },
     {
         "id": 12,
         "name": "Groot",
-        "image": "https://upload.wikimedia.org/wikipedia/en/3/35/Gotg_2.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/en/3/35/Gotg_2.jpg",
+        "clicked": false
     }
 ]
